@@ -12,12 +12,11 @@ var developers = ["Aykut Karakuş", "Caner Al", "Furkan Yıldız","Hilal Karaman
 var devLength = developers.length;
 var queue = 0;
 
-const timee = hour + " " + minute 
 function dateTime() {
   date = new Date();
   hour = date.getHours();
   minute = date.getMinutes();  
-// bot.sendMessage(chatId,timee)
+ bot.sendMessage(chatId,hour+":"+minute)
 
 
   console.log("saat",hour,"dakika",minute,"sıra",queue)
