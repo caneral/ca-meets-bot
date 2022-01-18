@@ -16,7 +16,7 @@ function dateTime() {
   date = new Date();
   hour = date.getHours();
   minute = date.getMinutes();  
-  bot.sendMessage(chatId,hour+":"+minute)
+//   bot.sendMessage(chatId,hour+":"+minute)
 
 
   console.log("saat",hour,"dakika",minute,"sıra",queue)
