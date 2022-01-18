@@ -16,7 +16,7 @@ function dateTime() {
   date = new Date();
   hour = date.getHours();
   minute = date.getMinutes();
-
+    console.log("try try")
   
   bot.sendMessage(chatId, "Saat 21.00'de toplantı olacaktır. Tüm üyelerin katılması beklenmektedir.\n\n Toplantı Görevlisi: " + developers[queue]);
       queue += 1;
