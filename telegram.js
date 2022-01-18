@@ -19,7 +19,7 @@ function dateTime() {
   minute = date.getMinutes();  
 
   console.log("saat",hour,"dakika",minute,"sıra",queue)
-  if (hour === 0 && minute === 28) {
+  if (hour === 20 && minute === 45) {
     if (isOkay === 0) {
       bot.sendMessage(chatId, "Deneme mesajıdır. g\n\n Saat 21.00'de toplantı olacaktır. Tüm üyelerin katılması beklenmektedir.\n\n Toplantı Görevlisi: " + developers[queue]);
       queue += 1;
@@ -35,8 +35,3 @@ function dateTime() {
 
 setInterval(dateTime, 1000);
 
-bot.sendMessage(chatId, "Deneme mesajıdır. g\n\n Saat 21.00'de toplantı olacaktır. Tüm üyelerin katılması beklenmektedir.\n\n Toplantı Görevlisi: " + developers[queue]);
-      queue += 1;
-      if(queue === devLength){
-          queue = 0;
-      }
