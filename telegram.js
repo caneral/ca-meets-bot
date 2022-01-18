@@ -1,8 +1,8 @@
 const telegramBot = require("node-telegram-bot-api");
 const token = process.env.TOKEN;
 const bot = new telegramBot(token, { polling: true });
-const chatId = "1340956785";
-
+const chatId = process.env.CHATID;
+// 1340956785
 var date;
 var hour;
 var minute;
