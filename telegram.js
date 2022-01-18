@@ -17,7 +17,7 @@ function dateTime() {
   hour = date.getHours();
   minute = date.getMinutes();  
 
-  if (hour === 0 && minute === 25) {
+  if (hour === 0 && minute === 28) {
     if (isOkay === 0) {
       bot.sendMessage(chatId, "Deneme mesajıdır. g\n\n Saat 21.00'de toplantı olacaktır. Tüm üyelerin katılması beklenmektedir.\n\n Toplantı Görevlisi: " + developers[queue]);
       queue += 1;
