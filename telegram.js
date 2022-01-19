@@ -3,6 +3,8 @@ const token = process.env.TOKEN;
 const bot = new telegramBot(token, { polling: true });
 const chatId = process.env.CHATID;
 
+const meetLink = "meet.google.com/atf-vftc-ftd"
+
 // 1340956785
 var date;
 var hour;
@@ -18,11 +20,10 @@ function dateTime() {
   minute = date.getMinutes();  
   //  bot.sendMessage(chatId,hour+":"+minute)
 
-
-  console.log("saat",hour,"dakika",minute,"sıra",queue)
   if (hour === 20 && minute === 45) {
     if (isOkay === 0) {
-      bot.sendMessage(chatId, "Saat 21.00'de toplantı olacaktır. Tüm üyelerin katılması beklenmektedir.\n\n Toplantı Görevlisi: " + developers[queue]);
+      bot.sendMessage(chatId, "Saat 21.00'de toplantı olacaktır. Tüm üyelerin katılması beklenmektedir.\n\n Toplantı Adresi: " + meetLink);
+      
       queue += 1;
       if(queue === devLength){
           queue = 0;
