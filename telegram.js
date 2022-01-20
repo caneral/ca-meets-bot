@@ -18,9 +18,9 @@ function dateTime() {
   date = new Date();
   hour = date.getHours();
   minute = date.getMinutes();  
-    bot.sendMessage(chatId,hour+":"+minute)
+    // bot.sendMessage(chatId,hour+":"+minute)
 
-  if (hour === 20 && minute === 53) {
+  if (hour === 20 && minute === 56) {
     if (isOkay === 0) {
       bot.sendMessage(chatId, "Saat 21.00'de toplantı olacaktır. Tüm üyelerin katılması beklenmektedir.\n\n Toplantı Adresi: " + meetLink);
       
