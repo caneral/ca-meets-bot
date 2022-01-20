@@ -6,8 +6,17 @@ const chatId = process.env.CHATID;
 const meetLink = "meet.google.com/atf-vftc-ftd";
 
 // 1340956785
-var currentTime = new Date().getTime();
-var meetTime = 1642704300;
+
+let date = new Date();
+let hours = date.getHours();
+let minutes = "0" + date.getMinutes();
+let seconds = "0" + date.getSeconds();
+let currentTime = hours + minutes.substr(-2) + seconds;
+
+console.log(currentTime);
+
+
+var meetTime = 215500;
 
 console.log(currentTime);
 var isOkay = 0;
