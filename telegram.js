@@ -16,14 +16,14 @@ let currentTime = hours + minutes.substr(-2) + seconds;
 console.log(currentTime);
 
 
-var meetTime = 215500;
+var meetTime = 215700;
 
 console.log(currentTime);
 var isOkay = 0;
 
 function meetNotification() {
       bot.sendMessage(
-        chatId,
+        chatId,"MeetTime:" + meetTime + "CurrentTime:" + currentTime +
         "Saat 21.00'de toplantı olacaktır. Tüm üyelerin katılması beklenmektedir.\n\n Toplantı Adresi: " +
           meetLink
       );
