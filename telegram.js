@@ -16,7 +16,7 @@ let currentTime = hours + minutes.substr(-2) + seconds;
 console.log(currentTime);
 
 
-var meetTime = 215700;
+var meetTime = 220000;
 
 console.log(currentTime);
 var isOkay = 0;
